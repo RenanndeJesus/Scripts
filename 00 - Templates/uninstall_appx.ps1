@@ -3,7 +3,7 @@
 ##################################
 
 # Verificar se o Dell Optimizer está instalado como APPX
-$AppxPackageName = "Vincular ao Celular" # Nome do pacote APPX
+$AppxPackageName = "Microsoft.YourPhone" # Nome do pacote APPX
 $AppxPackage = Get-AppxPackage -AllUsers | Where-Object { $_.Name -like "*$AppxPackageName*" }
 
 if ($null -ne $AppxPackage) {
